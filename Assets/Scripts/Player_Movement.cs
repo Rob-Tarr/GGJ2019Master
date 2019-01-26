@@ -5,12 +5,12 @@ using UnityEngine;
 public class Player_Movement : MonoBehaviour
 {
     [Header("Basics")]
-    public int MidAirJumps;//initialized mid-air jumps when grounded
-    public float JumpSpeed,MaxRunSpeed, MaxWalkSpeed, RunForce;
+    public int MidAirJumps=1;//initialized mid-air jumps when grounded
+    public float JumpSpeed=15,MaxRunSpeed=20, MaxWalkSpeed=10, RunForce=40;
 
     [Header("Advanced")]
-    public float DragFactor;//used to slow down to max speed rather than instantaneous
-    public float WallJumpVerticalSpeed, WallJumpHorizontalSpeed;
+    public float DragFactor=2f;//used to slow down to max speed rather than instantaneous
+    public float WallJumpVerticalSpeed=10, WallJumpHorizontalSpeed=20;
     
     private int JumpCount; //used to count remaining mid-air jumps
     private bool IsGrounded,IsWalled,IsMoving; //booleans for jump logic
@@ -18,6 +18,9 @@ public class Player_Movement : MonoBehaviour
     private Animator myAnimator;
     private Transform GroundCheck,WallCheck; //child transforms used for booleans
     private Vector3 WallCheckDist; //allows one wallcheck to check BOTH sides
+
+    private bool PreviousFaceRight,FacingRight;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +30,23 @@ public class Player_Movement : MonoBehaviour
         WallCheck = gameObject.transform.GetChild(1);
         JumpCount = 0; //intialize jumps to 0
         WallCheckDist = WallCheck.position - gameObject.transform.position; //initial distance of wallcheck maintained
+        PreviousFaceRight = true;
+        FacingRight = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (FacingRight && Mathf.Sign(MyRB.velocity.x)<0.1f)
+        {
+            FacingRight = false;
+            gameObject.transform.localScale = new Vector3(-1f, 1f, 0f);
+        }
+        else if (!FacingRight && Mathf.Sign(MyRB.velocity.x) > 0.1f)
+        {
+            FacingRight = true;
+            gameObject.transform.localScale = new Vector3(1f, 1f, 0f);
+        }
         //JUMP LOGIC
         IsGrounded = Physics2D.Linecast(gameObject.transform.position, GroundCheck.position, LayerMask.GetMask("Ground")).normal == Vector2.up;//Check to see if ground  is directly below player for groundcheck
         IsWalled =Mathf.Abs( Vector2.Dot(Physics2D.Linecast(gameObject.transform.position, WallCheck.position, LayerMask.GetMask("Wall")).normal, Vector2.left) )== 1f; //Normal is horizontal
@@ -85,9 +100,18 @@ public class Player_Movement : MonoBehaviour
 
 
         WallCheck.position = gameObject.transform.position + WallCheckDist * Input.GetAxisRaw("Horizontal");
+
+
+        //bool playerHasHorizontalSpeed = Mathf.Abs(MyRB.velocity.x) > Mathf.Epsilon;
+        /*
+        if (Mathf.Abs(MyRB.velocity.x) > Mathf.Epsilon)
+        {
+            Debug.Log("Has Horizontal Speed");
+            gameObject.transform.localScale = new Vector3(Mathf.Sign(MyRB.velocity.x), 1f,0f);
+        }
+        */
         
 
-
-
+        PreviousFaceRight = FacingRight;
     }
 }
