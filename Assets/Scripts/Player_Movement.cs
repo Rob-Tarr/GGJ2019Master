@@ -30,19 +30,18 @@ public class Player_Movement : MonoBehaviour
         WallCheck = gameObject.transform.GetChild(1);
         JumpCount = 0; //intialize jumps to 0
         WallCheckDist = WallCheck.position - gameObject.transform.position; //initial distance of wallcheck maintained
-        PreviousFaceRight = true;
         FacingRight = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (FacingRight && Mathf.Sign(MyRB.velocity.x)<0.1f)
+        if (FacingRight && Mathf.Sign(MyRB.velocity.x)<0f)
         {
             FacingRight = false;
             gameObject.transform.localScale = new Vector3(-1f, 1f, 0f);
         }
-        else if (!FacingRight && Mathf.Sign(MyRB.velocity.x) > 0.1f)
+        else if (!FacingRight && Mathf.Sign(MyRB.velocity.x) > 0f)
         {
             FacingRight = true;
             gameObject.transform.localScale = new Vector3(1f, 1f, 0f);
@@ -100,18 +99,5 @@ public class Player_Movement : MonoBehaviour
 
 
         WallCheck.position = gameObject.transform.position + WallCheckDist * Input.GetAxisRaw("Horizontal");
-
-
-        //bool playerHasHorizontalSpeed = Mathf.Abs(MyRB.velocity.x) > Mathf.Epsilon;
-        /*
-        if (Mathf.Abs(MyRB.velocity.x) > Mathf.Epsilon)
-        {
-            Debug.Log("Has Horizontal Speed");
-            gameObject.transform.localScale = new Vector3(Mathf.Sign(MyRB.velocity.x), 1f,0f);
-        }
-        */
-        
-
-        PreviousFaceRight = FacingRight;
     }
 }
