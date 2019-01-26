@@ -13,14 +13,16 @@ public class Player_Movement : MonoBehaviour
     public float WallJumpVerticalSpeed, WallJumpHorizontalSpeed;
     
     private int JumpCount; //used to count remaining mid-air jumps
-    private bool IsGrounded,IsWalled; //booleans for jump logic
+    private bool IsGrounded,IsWalled,IsMoving; //booleans for jump logic
     private Rigidbody2D MyRB; //player rigidbody
+    private Animator myAnimator;
     private Transform GroundCheck,WallCheck; //child transforms used for booleans
     private Vector3 WallCheckDist; //allows one wallcheck to check BOTH sides
     // Start is called before the first frame update
     void Start()
     {
         MyRB = gameObject.GetComponent<Rigidbody2D>();
+        myAnimator = GetComponent<Animator>();
         GroundCheck = gameObject.transform.GetChild(0); //first and second child should correspond to ground and wall check
         WallCheck = gameObject.transform.GetChild(1);
         JumpCount = 0; //intialize jumps to 0
@@ -33,7 +35,8 @@ public class Player_Movement : MonoBehaviour
         //JUMP LOGIC
         IsGrounded = Physics2D.Linecast(gameObject.transform.position, GroundCheck.position, LayerMask.GetMask("Ground")).normal == Vector2.up;//Check to see if ground  is directly below player for groundcheck
         IsWalled =Mathf.Abs( Vector2.Dot(Physics2D.Linecast(gameObject.transform.position, WallCheck.position, LayerMask.GetMask("Wall")).normal, Vector2.left) )== 1f; //Normal is horizontal
-        Debug.Log(IsWalled);
+        IsMoving = MyRB.velocity.x != 0f || !IsGrounded;
+        myAnimator.SetBool("isRunning", IsMoving);
         if (IsGrounded)
         {
             JumpCount = MidAirJumps;//restore jumps
