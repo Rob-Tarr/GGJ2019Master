@@ -36,15 +36,14 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (FacingRight && Mathf.Sign(MyRB.velocity.x)<0f)
+        //Direction Facing
+        if (Input.GetAxisRaw("Horizontal")>0)
         {
-            FacingRight = false;
-            gameObject.transform.localScale = new Vector3(-1f, 1f, 0f);
-        }
-        else if (!FacingRight && Mathf.Sign(MyRB.velocity.x) > 0f)
-        {
-            FacingRight = true;
             gameObject.transform.localScale = new Vector3(1f, 1f, 0f);
+        }
+        else if (Input.GetAxisRaw("Horizontal") < 0)
+        {
+            gameObject.transform.localScale = new Vector3(-1f, 1f, 0f);
         }
         //JUMP LOGIC
         IsGrounded = Physics2D.Linecast(gameObject.transform.position, GroundCheck.position, LayerMask.GetMask("Ground")).normal == Vector2.up;//Check to see if ground  is directly below player for groundcheck
@@ -68,7 +67,6 @@ public class Player_Movement : MonoBehaviour
         }
         if(IsWalled && Input.GetButtonDown("Jump"))
         {
-            Debug.Log("YES");
             MyRB.velocity = new Vector2(-WallJumpHorizontalSpeed* Input.GetAxisRaw("Horizontal"), WallJumpVerticalSpeed);
         }
 
@@ -94,10 +92,7 @@ public class Player_Movement : MonoBehaviour
             {
                 MyRB.velocity = new Vector2(Mathf.Clamp(MyRB.velocity.x, -MaxWalkSpeed, MaxWalkSpeed), MyRB.velocity.y);
             }
-
         }
-
-
         WallCheck.position = gameObject.transform.position + WallCheckDist * Input.GetAxisRaw("Horizontal");
     }
 }
