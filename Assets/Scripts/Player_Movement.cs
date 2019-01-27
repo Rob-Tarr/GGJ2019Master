@@ -45,15 +45,11 @@ public class Player_Movement : MonoBehaviour
         {
             gameObject.transform.localScale = new Vector3(-1f, 1f, 0f);
         }
-        //Booleans
-
+        //JUMP LOGIC
         IsGrounded = Physics2D.Linecast(gameObject.transform.position, GroundCheck.position, LayerMask.GetMask("Ground")).normal == Vector2.up;//Check to see if ground  is directly below player for groundcheck
         IsWalled =Mathf.Abs( Vector2.Dot(Physics2D.Linecast(gameObject.transform.position, WallCheck.position, LayerMask.GetMask("Wall")).normal, Vector2.left) )== 1f; //Normal is horizontal
-        IsMoving = Mathf.Abs(MyRB.velocity.x) >1f || !IsGrounded;
+        IsMoving = MyRB.velocity.x != 0f || !IsGrounded;
         myAnimator.SetBool("isRunning", IsMoving);
-
-
-        //JUMP LOGIC
         if (IsGrounded)
         {
             JumpCount = MidAirJumps;//restore jumps
