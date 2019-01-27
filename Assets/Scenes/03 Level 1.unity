@@ -557,7 +557,11 @@ Transform:
   - {fileID: 1625262311}
   m_Father: {fileID: 980069591}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 =======
   m_RootOrder: 6
 >>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
@@ -800,7 +804,11 @@ Transform:
     - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 5
+=======
+      value: 7
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
       objectReference: {fileID: 0}
     - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
         type: 3}
@@ -823,7 +831,115 @@ Transform:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 5396d807b18666647be6f22d3564411b, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: a3f51b3c992f3e94cab3babd4d521f1c, type: 3}
+--- !u!1001 &855323187
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 980069591}
+    m_Modifications:
+    - target: {fileID: 476423984530260886, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_Name
+      value: Bookcase Base (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476423984530260886, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0063125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5637293
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.10515766
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5396d807b18666647be6f22d3564411b, type: 3}
+--- !u!1 &856144616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 856144617}
+  m_Layer: 0
+  m_Name: Cameras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &856144617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856144616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 --- !u!1 &980069590
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,14 +974,21 @@ Transform:
   - {fileID: 113583001}
   - {fileID: 1760959987}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   - {fileID: 635572858}
 >>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   - {fileID: 1693607281}
   - {fileID: 2040604871}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 2
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 =======
   m_RootOrder: 2
 >>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
@@ -971,7 +1094,11 @@ Transform:
   m_GameObject: {fileID: 1385056222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: 0, y: -0.81, z: 0}
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 =======
   m_LocalPosition: {x: 0, y: -0.81, z: 0}
 >>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
@@ -1172,6 +1299,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &1626958624
 GameObject:
@@ -1377,6 +1505,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 =======
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1760959987 stripped
+=======
+--- !u!4 &1693607281 stripped
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+    type: 3}
+  m_PrefabInstance: {fileID: 855323187}
+  m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
+=======
 --- !u!4 &1760959987 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
@@ -1734,7 +1874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 7
+=======
+      value: 1
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 =======
       value: 1
 >>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
@@ -1829,7 +1973,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: -2.95
+=======
+      value: -1.5736874
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 =======
       value: -1.5736874
 >>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
@@ -1891,7 +2039,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 28b77ca00c76a34488a95f066974c06f, type: 3}
 =======
+=======
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   m_SourcePrefab: {fileID: 100100000, guid: 5396d807b18666647be6f22d3564411b, type: 3}
 >>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
