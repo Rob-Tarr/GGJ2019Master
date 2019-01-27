@@ -188,7 +188,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1832656318}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!4 &220217852 stripped
+=======
+  m_GameObject: {fileID: 232076066}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.3300002, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &280448343 stripped
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 Transform:
   m_CorrespondingSourceObject: {fileID: 2910745092659569424, guid: bea1abe81f1ff8b4ab7fc665b25558a1,
     type: 3}
@@ -544,7 +556,11 @@ Transform:
   m_Children:
   - {fileID: 1625262311}
   m_Father: {fileID: 980069591}
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &726781820
 PrefabInstance:
@@ -601,7 +617,7 @@ PrefabInstance:
     - target: {fileID: 6505423904843581010, guid: a3f51b3c992f3e94cab3babd4d521f1c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6505423904843581010, guid: a3f51b3c992f3e94cab3babd4d521f1c,
         type: 3}
@@ -638,6 +654,99 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: a3f51b3c992f3e94cab3babd4d521f1c, type: 3}
 --- !u!1001 &855323187
 PrefabInstance:
+<<<<<<< HEAD
+=======
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 980069591}
+    m_Modifications:
+    - target: {fileID: 476423984530260886, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_Name
+      value: Bookcase Base (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 476423984530260886, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0063125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5637293
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.10515766
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5396d807b18666647be6f22d3564411b, type: 3}
+--- !u!1 &856144616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 856144617}
+  m_Layer: 0
+  m_Name: Cameras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &856144617
+Transform:
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
@@ -748,10 +857,18 @@ Transform:
   - {fileID: 1400521001}
   - {fileID: 113583001}
   - {fileID: 1760959987}
+<<<<<<< HEAD
+=======
+  - {fileID: 635572858}
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   - {fileID: 1693607281}
   - {fileID: 2040604871}
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 1
+=======
+  m_RootOrder: 2
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1053752201
 PrefabInstance:
@@ -853,7 +970,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385056222}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 0, y: 0, z: 0}
+=======
+  m_LocalPosition: {x: 0, y: -0.81, z: 0}
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2082351159}
@@ -1051,6 +1172,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD
 --- !u!1 &1626958624
 GameObject:
   m_ObjectHideFlags: 0
@@ -1085,11 +1207,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 --- !u!4 &1693607281 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6505423904843581010, guid: a3f51b3c992f3e94cab3babd4d521f1c,
     type: 3}
   m_PrefabInstance: {fileID: 726781820}
+<<<<<<< HEAD
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1697879739
 GameObject:
@@ -1250,6 +1375,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d25f1870ff7a4429625fbc65d77178, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1760959987 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5303287715860403103, guid: 5396d807b18666647be6f22d3564411b,
+    type: 3}
+  m_PrefabInstance: {fileID: 855323187}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
 --- !u!1001 &1832656318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1599,7 +1733,11 @@ PrefabInstance:
     - target: {fileID: 3382171389599772842, guid: 698fcef9667fc8742932b54a918b0b55,
         type: 3}
       propertyPath: m_RootOrder
+<<<<<<< HEAD
       value: 7
+=======
+      value: 1
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
       objectReference: {fileID: 0}
     - target: {fileID: 3382171389599772842, guid: 698fcef9667fc8742932b54a918b0b55,
         type: 3}
@@ -1690,7 +1828,11 @@ PrefabInstance:
     - target: {fileID: 8988505940827087764, guid: 28b77ca00c76a34488a95f066974c06f,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: -2.95
+=======
+      value: -1.5736874
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
       objectReference: {fileID: 0}
     - target: {fileID: 8988505940827087764, guid: 28b77ca00c76a34488a95f066974c06f,
         type: 3}
@@ -1748,4 +1890,8 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+<<<<<<< HEAD
   m_SourcePrefab: {fileID: 100100000, guid: 28b77ca00c76a34488a95f066974c06f, type: 3}
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 5396d807b18666647be6f22d3564411b, type: 3}
+>>>>>>> parent of 428c757... Added Main Muenu screen and more sprites
